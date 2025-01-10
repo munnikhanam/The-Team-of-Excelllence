@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "banner_img": "https://i.im.ge/2025/01/07/zvzTJY.th-1.jpeg",
+    "profile_img": "  https://i.im.ge/2025/01/07/zvkDl9.th-13.jpeg",
+    "role": "All-rounder",
+    "ratings": 4.9,
+    "price": 13000000,
+    "achievements": "Top ICC rankings for all-rounders."
+  },
+  {
+    "id": 2,
+    "name": "Mushfiqur Rahim",
+    "banner_img": "https://i.im.ge/2025/01/07/zvfbXX.jpeg",
+    "profile_img": " https://i.im.ge/2025/01/07/zvkLc8.th-12.jpeg",
+    "role": "Wicketkeeper-Batsman",
+    "ratings": 4.6,
+    "price": 8000000,
+    "achievements": "Highest Test score for Bangladesh, reliable batsman."
+  },
+  {
+    "id": 3,
+    "name": "Virat Kohli",
+    "banner_img": "https://via.placeholder.com/800x300?text=Virat+Kohli+Banner",
+    "profile_img": "https://via.placeholder.com/150?text=Virat+Kohli",
+    "role": "Batsman",
+    "ratings": 4.9,
+    "price": 15000000,
+    "achievements": "Top scorer for India, ICC Player of the Year."
+  },
+
+  {
+    "id": 4,
+    "name": "Babar Azam",
+    "banner_img": "  https://i.im.ge/2025/01/07/zvkiDM.th-10.jpeg",
+    "profile_img": " https://i.im.ge/2025/01/07/zvkUeh.th-11.jpeg",
+    "role": "Batsman",
+    "ratings": 4.7,
+    "price": 13000000,
+    "achievements": "Top scorer for Pakistan, ICC rankings leader."
+  },
+
+  {
+    "id": 5,
+    "name": "Kumar Sangakkara",
+    "banner_img": " https://i.im.ge/2025/01/07/zvkNlp.th-8.jpeg",
+    "profile_img": " https://i.im.ge/2025/01/07/zvkP0P.th-9.jpeg",
+    "role": "Batsman",
+    "ratings": 4.9,
+    "price": 20000000,
+    "achievements": "Legendary wicketkeeper, over 12,000 ODI runs."
+  },
+  {
+    "id": 6,
+    "name": "Imran Khan",
+    "banner_img": "https://i.im.ge/2025/01/07/zvfep0.gettyimages-593268490-2048x2048.jpeg",
+    "profile_img": "https://i.im.ge/2025/01/07/zvfep0.gettyimages-593268490-2048x2048.jpeg",
+    "role": "All-rounder",
+    "ratings": 4.8,
+    "price": 11000000,
+    "achievements": "World Cup-winning captain for Pakistan."
+  },
+  {
+    "id": 7,
+    "name": "Shoaib Akhtar",
+    "banner_img": "https://i.im.ge/2025/01/07/zvkTwc.gettyimages-631594166-612x612.jpeg",
+    "profile_img": "  https://i.im.ge/2025/01/07/zvkI0X.th-2.jpeg",
+    "role": "Bowler",
+    "ratings": 4.7,
+    "price": 9500000,
+    "achievements": "Fastest bowler ever, key Pakistan pacer."
+  },
+  {
+    "id": 8,
+    "name": "Ricky Ponting",
+    "banner_img": "  https://i.im.ge/2025/01/07/zvkm6C.th-6.jpeg",
+    "profile_img": "https://i.im.ge/2025/01/07/zvkwVq.th-7.jpeg ",
+    "role": "Batsman",
+    "ratings": 4.9,
+    "price": 25000000,
+    "achievements": "Two-time World Cup-winning captain for Australia."
+  },
+  {
+    "id": 9,
+    "name": "David Warner",
+    "banner_img": "https://i.im.ge/2025/01/07/zvfJbf.gettyimages-1420262437-612x612.jpeg",
+    "profile_img": "  https://i.im.ge/2025/01/07/zvkj24.th-5.jpeg",
+    "role": "Batsman",
+    "ratings": 4.7,
+    "price": 13000000,
+    "achievements": "Top Australian run-scorer, IPL champion."
+  },
+  {
+    "id": 10,
+    "name": "Lasith Malinga",
+    "banner_img": "https://i.im.ge/2025/01/07/zvfzZp.e7712ec2854c6ff27dbb191f8a1783f2.jpeg",
+    "profile_img": "https://i.im.ge/2025/01/07/zvk5vD.th-4.jpeg",
+    "role": "Bowler",
+    "ratings": 4.8,
+    "price": 8500000,
+    "achievements": "T20 World Cup-winning bowler for Sri Lanka."
+  },
+  {
+    "id": 11,
+    "name": "Shahid Afridi",
+    "banner_img": "https://i.im.ge/2025/01/07/zvff1C.7c4dd5a0dc6eaeab8ed8566226e24f33.jpeg",
+    "profile_img": "https://i.im.ge/2025/01/07/zvfpXP.33c190381b161a8b0b50c2b7804de458.jpeg",
+    "role": "All-rounder",
+    "ratings": 4.8,
+    "price": 10000000,
+    "achievements": "Record for fastest ODI century."
+  }
+]
