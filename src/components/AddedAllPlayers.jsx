@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { RiDeleteBin6Line } from "react-icons/ri";
 const AddedAllPlayers = ({ newPlayer }) => {
   const { name, role, price, profile_img } = newPlayer;
@@ -19,6 +21,9 @@ const AddedAllPlayers = ({ newPlayer }) => {
       </div>
     </div>
   );
+};
+AddedAllPlayers.propTypes = {
+  newPlayer: PropTypes.func.isRequired,
 };
 
 export default AddedAllPlayers;

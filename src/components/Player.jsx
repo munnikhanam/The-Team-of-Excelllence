@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { Children } from "react";
 
 const Player = ({ player, handleSelectedBtn }) => {
   const { name, achievements, banner_img, profile_img, role, price, ratings } =
