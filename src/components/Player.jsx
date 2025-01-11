@@ -2,17 +2,31 @@ import PropTypes from "prop-types";
 import { Children } from "react";
 
 const Player = ({ player, handleSelectedBtn }) => {
-  const { name, achievements, banner_img, profile_img, role, price } = player;
+  const { name, achievements, banner_img, profile_img, role, price, ratings } =
+    player;
 
   return (
     <div>
-      <div className="card card-compact bg-base-100 w-96 shadow-xl">
+      <div className="card card-compact bg-base-100 shadow-xl">
         <figure>
-          <img src={banner_img} alt="Shoes" />
+          <img
+            className="w-full h-[250px] bg-cover bg-center object-cover"
+            src={banner_img}
+            alt="banner"
+          />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div className="flex justify-around items-center gap-2 my-5 border-b ">
+            <div className="flex items-center gap-3">
+              <img className="w-8 h-8 rounded-full" src={profile_img} alt="" />
+              <h2 className="card-title font-bold text-2xl">{name}</h2>
+            </div>
+            <div>
+              <button className="btn my-5">{role}</button>
+            </div>
+          </div>
+          <p className="text-xl font-bold">Ratings: {ratings}</p>
+          <p className="text-xl font-bold"> Price: {price} $</p>
           <div className="card-actions justify-end">
             <button
               onClick={() => handleSelectedBtn(player)}
