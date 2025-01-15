@@ -1,6 +1,7 @@
 import Header from "./components/Header/Header";
 import Banner from "./components/Banner/Banner";
 import Players from "./components/Players/Players";
+import { ToastContainer, toast } from "react-toastify";
 import { useState } from "react";
 
 const App = () => {
@@ -9,26 +10,33 @@ const App = () => {
 
   const handleAddMoney = () => {
     const total = addMoney + 6000000;
+    {
+      total &&
+        toast(" Congratulations ! Credit added to your account 🙂", {
+          position: "top-center",
+        });
+    }
 
     setAddMoney(total);
   };
   const handleSelectedBtn = (item) => {
-    if (!item || typeof item !== "object") {
-      console.error("Invalid item:", item);
-      return;
-    }
     const addPlayersMoney = addMoney - item.price;
-    if (addPlayersMoney < 0) {
-      console.error("Not enough money to select this player.");
+
+    if (addPlayersMoney <= 0) {
+      toast("Sorry ! You have not enough money to buy this player", {
+        position: "top-center",
+      });
       return;
+    } else {
+      toast("Congratulation ! You have buy this player", {
+        position: "top-center",
+      });
     }
+
+    <ToastContainer />;
     setAddMoney(addPlayersMoney);
     setSelected([...selected, item]);
   };
-  // const handleSelectedPlayers = (items) => {
-  //   // setAddPlayer([...addPlayer, items]);
-  //   setAddPlayer([...addPlayer, ...items]);
-  // };
 
   return (
     <div>

@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
 
 const Player = ({ player, handleSelectedBtn }) => {
-  const { name, achievements, banner_img, profile_img, role, price, ratings } =
-    player;
+  const { name, banner_img, profile_img, role, price, ratings } = player;
 
   return (
     <div>

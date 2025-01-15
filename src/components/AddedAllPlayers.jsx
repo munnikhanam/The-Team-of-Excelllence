@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import { RiDeleteBin6Line } from "react-icons/ri";
 const AddedAllPlayers = ({ newPlayer }) => {
-  const { name, role, price, profile_img } = newPlayer;
+  const { name, profile_img } = newPlayer;
   return (
     <div className="my-10 ">
       <div className="shadow-2xl rounded-md ">
