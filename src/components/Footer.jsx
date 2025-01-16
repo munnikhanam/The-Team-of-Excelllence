@@ -42,15 +42,20 @@ const Footer = () => {
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="input input-bordered md:join-item my-5 "
+                  className="input input-bordered md:join-item my-5 md:my-0 "
                 />
-                <button className="btn font-bold text-xl  join-item bg-gradient-to-r from-pink-500 via-orange-300 to-yellow-400">
+                <button className="btn font-bold text-xl  md:join-item bg-gradient-to-r from-pink-500 via-orange-300 to-yellow-400">
                   Subscribe
                 </button>
               </div>
             </fieldset>
           </form>
         </footer>
+      </div>
+      <div className="border-t ">
+        <p className="text-center text-[#FFFFFF99] text-base  mt-5">
+          @2025 Your Company All Rights Reserved.
+        </p>
       </div>
     </div>
   );

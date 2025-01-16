@@ -11,13 +11,13 @@ const Newsletter = () => {
           </span>
         </div>
 
-        <div className="md:join">
+        <div className=" md:join">
           <input
             type="text"
             placeholder="Enter your email"
-            className="input input-bordered md:join-item my-2 text-[#13131366]"
+            className="input input-bordered md:join-item my-2 md:my-0 text-[#13131366]"
           />
-          <button className="btn font-bold text-xl  join-item bg-gradient-to-r from-pink-500 via-orange-300 to-yellow-400">
+          <button className="btn font-bold text-xl  md:join-item bg-gradient-to-r from-pink-500 via-orange-300 to-yellow-400">
             Subscribe
           </button>
         </div>

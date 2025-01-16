@@ -46,6 +46,7 @@ const Player = ({ player, handleSelectedBtn, isToggled }) => {
 Player.propTypes = {
   player: PropTypes.object.isRequired,
   handleSelectedBtn: PropTypes.func.isRequired,
+  isToggled: PropTypes.bool,
 };
 
 export default Player;
