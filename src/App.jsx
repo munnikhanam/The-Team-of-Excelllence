@@ -24,7 +24,12 @@ const App = () => {
   const handleSelectedBtn = (item) => {
     const addPlayersMoney = addMoney - item.price;
     const isExist = selected.find((oldPlayers) => oldPlayers.id === item.id);
-
+    {
+      !isExist &&
+        toast("Congratulation ! You have  bought this player", {
+          position: "top-center",
+        });
+    }
     if (addPlayersMoney <= 0) {
       toast("Sorry ! You have not enough money to buy this player", {
         position: "top-center",
@@ -33,7 +38,7 @@ const App = () => {
     } else {
       {
         isExist
-          ? toast("Sorry ! You have already buy this player", {
+          ? toast("Sorry ! You have already bought this player", {
               position: "top-center",
             })
           : setSelected([...selected, item]);
