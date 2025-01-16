@@ -28,7 +28,7 @@ const Players = ({ handleSelectedBtn, selected }) => {
     }
   };
   return (
-    <div>
+    <div className="w-11/12 mx-auto  ">
       <h1 className="text-4xl text-black">{players.length}</h1>
       <div className="flex justify-between">
         <h2 className="text-2xl font-bold">Available Players</h2>

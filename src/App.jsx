@@ -3,6 +3,8 @@ import Banner from "./components/Banner/Banner";
 import Players from "./components/Players/Players";
 import { ToastContainer, toast } from "react-toastify";
 import { useState } from "react";
+import Footer from "./components/Footer";
+import Newsletter from "./components/Newsletter";
 
 const App = () => {
   const [addMoney, setAddMoney] = useState(0);
@@ -44,10 +46,13 @@ const App = () => {
         <Header addMoney={addMoney} />
         <Banner handleAddMoney={handleAddMoney} />
       </div>
-      <div className="w-11/12 mx-auto">
+      <div className=" md:relative md:mb-28 md:py-20">
         <Players handleSelectedBtn={handleSelectedBtn} selected={selected} />
-        {/* <Addedplayers addPlayer={addPlayer} /> */}
+        <div className="md:absolute  md:inset-x-0 md:bottom-[-1]">
+          <Newsletter />
+        </div>
       </div>
+      <Footer />
     </div>
   );
 };

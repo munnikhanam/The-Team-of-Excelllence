@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { TbCoinFilled } from "react-icons/tb";
 const Header = ({ addMoney }) => {
   return (
-    <nav className="w-11/12 mx-auto">
+    <nav className="w-11/12 mx-auto sticky top-0 ">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
