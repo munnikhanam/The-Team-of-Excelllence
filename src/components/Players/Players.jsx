@@ -29,9 +29,10 @@ const Players = ({ handleSelectedBtn, selected }) => {
   };
   return (
     <div className="w-11/12 mx-auto  ">
-      <h1 className="text-4xl text-black">{players.length}</h1>
       <div className="flex justify-between">
-        <h2 className="text-2xl font-bold">Available Players</h2>
+        <h2 className="text-2xl font-bold">
+          Available Players : <span>{players.length}</span>
+        </h2>
         <div className="flex gap-2">
           <button
             onClick={handleAvailable}
@@ -61,25 +62,6 @@ const Players = ({ handleSelectedBtn, selected }) => {
               </span>
             </button>
           </div>
-
-          {/* <div onClick={() => setIsToggled(!isToggled)}>
-            <button
-              onClick={() => handleSelectedPlayers(selected)}
-              className="btn font-bold"
-            >
-              selected:
-              <span>
-                <p>
-                  {selected.length <= 6
-                    ? selected.length
-                    : toast("Sorry you can't add more than 6 players!", {
-                        position: "top-center",
-                      })}
-                  <ToastContainer />
-                </p>
-              </span>
-            </button>
-          </div> */}
         </div>
       </div>
       {isToggled ? (
@@ -88,6 +70,7 @@ const Players = ({ handleSelectedBtn, selected }) => {
             <Player
               key={player.id}
               player={player}
+              isToggled={isToggled}
               handleSelectedBtn={handleSelectedBtn}
             />
           ))}

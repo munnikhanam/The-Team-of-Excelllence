@@ -17,8 +17,8 @@ const Addedplayers = ({ addPlayer, handleAvailable, isToggled }) => {
       </div>
       <button
         onClick={handleAvailable}
-        className={` px-5 py-3 rounded-lg font-bold text-xl ${
-          isToggled ? "bg-[#E7FE29]" : "bg-[#FFFFFF]"
+        className={`mb-10 px-5 py-3 rounded-lg font-bold text-xl ${
+          isToggled ? "bg-[#FFFFFF]" : "bg-[#E7FE29]"
         }`}
       >
         Add more players
@@ -29,6 +29,8 @@ const Addedplayers = ({ addPlayer, handleAvailable, isToggled }) => {
 
 Addedplayers.propTypes = {
   addPlayer: PropTypes.array.isRequired,
+  handleAvailable: PropTypes.func.isRequired,
+  isToggled: PropTypes.bool.isRequired,
 };
 
 export default Addedplayers;

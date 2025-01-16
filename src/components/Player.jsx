@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 
-const Player = ({ player, handleSelectedBtn }) => {
-  const { name, banner_img, profile_img, role, price, ratings } = player;
+const Player = ({ player, handleSelectedBtn, isToggled }) => {
+  const { name, banner_img, profile_img, role, price, ratings, achievements } =
+    player;
 
   return (
     <div>
@@ -15,7 +16,7 @@ const Player = ({ player, handleSelectedBtn }) => {
         </figure>
         <div className="card-body">
           <div className="flex justify-around items-center gap-2 my-5 border-b ">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 ">
               <img className="w-8 h-8 rounded-full" src={profile_img} alt="" />
               <h2 className="card-title font-bold text-2xl">{name}</h2>
             </div>
@@ -25,12 +26,15 @@ const Player = ({ player, handleSelectedBtn }) => {
           </div>
           <p className="text-xl font-bold">Ratings: {ratings}</p>
           <p className="text-xl font-bold"> Price: {price} $</p>
+          <p className="text-xl font-bold"> Achievements: {achievements} </p>
           <div className="card-actions justify-end">
             <button
               onClick={() => handleSelectedBtn(player)}
-              className="btn btn-primary"
+              className={`btn font-bold ${
+                isToggled ? "bg-[#E7FE29]" : "bg-[#ffff]"
+              }`}
             >
-              Buy Now
+              Choose Players
             </button>
           </div>
         </div>
